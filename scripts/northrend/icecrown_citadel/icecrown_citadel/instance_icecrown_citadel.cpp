@@ -15,14 +15,14 @@
  */
 
 /* ScriptData
-SDName: boss_malygos
+SDName: instance_icecrown_citadel
 SD%Complete: 0
 SDComment: Placeholder
-SDCategory: Eye of Eternity
+SDCategory: Icecrown Citadel
 EndScriptData */
 
 #include "precompiled.h"
 
-void AddSC_boss_malygos()
+void AddSC_instance_icecrown_citadel()
 {
 }

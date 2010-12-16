@@ -15,14 +15,14 @@
  */
 
 /* ScriptData
-SDName: boss_malygos
+SDName: dire_maul
 SD%Complete: 0
 SDComment: Placeholder
-SDCategory: Eye of Eternity
+SDCategory: Dire Maul
 EndScriptData */
 
 #include "precompiled.h"
 
-void AddSC_boss_malygos()
+void AddSC_dire_maul()
 {
 }

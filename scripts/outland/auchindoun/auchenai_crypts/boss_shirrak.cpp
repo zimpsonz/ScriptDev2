@@ -15,14 +15,14 @@
  */
 
 /* ScriptData
-SDName: boss_malygos
+SDName: boss_shirrak
 SD%Complete: 0
 SDComment: Placeholder
-SDCategory: Eye of Eternity
+SDCategory: Auchindoun, Auchenai Crypts
 EndScriptData */
 
 #include "precompiled.h"
 
-void AddSC_boss_malygos()
+void AddSC_boss_shirrak()
 {
 }
