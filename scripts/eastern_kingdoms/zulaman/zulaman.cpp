@@ -85,7 +85,7 @@ struct MANGOS_DLL_DECL npc_forest_frogAI : public ScriptedAI
 
             if (cEntry == 24408)
                 m_pInstance->SetData(TYPE_RAND_VENDOR_1,DONE);
-            
+
             if (cEntry == 24409)
                 m_pInstance->SetData(TYPE_RAND_VENDOR_2,DONE);
         }
@@ -198,7 +198,7 @@ bool GossipSelect_npc_harrison_jones_za(Player* pPlayer, Creature* pCreature, ui
     {
         if (npc_harrison_jones_zaAI* pHarrisonAI = dynamic_cast<npc_harrison_jones_zaAI*>(pCreature->AI()))
             pHarrisonAI->StartEvent();
-        
+
         pPlayer->CLOSE_GOSSIP_MENU();
     }
     return true;
@@ -214,7 +214,7 @@ CreatureAI* GetAI_npc_harrison_jones_za(Creature* pCreature)
 ######*/
 
 //Unsure how this Gong must work. Here we always return false to allow Mangos always process further.
-bool GOHello_go_strange_gong(Player* pPlayer, GameObject* pGo)
+bool GOUse_go_strange_gong(Player* pPlayer, GameObject* pGo)
 {
     ScriptedInstance* pInstance = (ScriptedInstance*)pGo->GetInstanceData();
 
@@ -257,6 +257,6 @@ void AddSC_zulaman()
 
     newscript = new Script;
     newscript->Name = "go_strange_gong";
-    newscript->pGOHello = &GOHello_go_strange_gong;
+    newscript->pGOUse = &GOUse_go_strange_gong;
     newscript->RegisterSelf();
 }

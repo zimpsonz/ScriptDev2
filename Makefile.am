@@ -418,6 +418,8 @@ scripts/northrend/naxxramas/boss_sapphiron.cpp \
 scripts/northrend/naxxramas/boss_thaddius.cpp \
 scripts/northrend/naxxramas/naxxramas.h \
 scripts/northrend/naxxramas/instance_naxxramas.cpp \
+scripts/northrend/nexus/eye_of_eternity/eye_of_eternity.h \
+scripts/northrend/nexus/eye_of_eternity/instance_eye_of_eternity.cpp \
 scripts/northrend/nexus/eye_of_eternity/boss_malygos.cpp \
 scripts/northrend/nexus/nexus/boss_anomalus.cpp \
 scripts/northrend/nexus/nexus/boss_keristrasza.cpp \
@@ -506,7 +508,7 @@ scripts/outland/auchindoun/mana_tombs/boss_nexusprince_shaffar.cpp \
 scripts/outland/auchindoun/mana_tombs/boss_pandemonius.cpp \
 scripts/outland/auchindoun/sethekk_halls/boss_anzu.cpp \
 scripts/outland/auchindoun/sethekk_halls/boss_darkweaver_syth.cpp \
-scripts/outland/auchindoun/sethekk_halls/boss_tailonking_ikiss.cpp \
+scripts/outland/auchindoun/sethekk_halls/boss_talon_king_ikiss.cpp \
 scripts/outland/auchindoun/sethekk_halls/instance_sethekk_halls.cpp \
 scripts/outland/auchindoun/sethekk_halls/sethekk_halls.h \
 scripts/outland/auchindoun/shadow_labyrinth/boss_ambassador_hellmaw.cpp \
@@ -628,6 +630,7 @@ scripts/world/mob_generic_creature.cpp \
 scripts/world/npc_professions.cpp \
 scripts/world/npcs_special.cpp \
 scripts/world/spell_scripts.cpp \
+system/MangosdRev.cpp \
 system/ScriptLoader.cpp \
 system/ScriptLoader.h \
 system/system.cpp \

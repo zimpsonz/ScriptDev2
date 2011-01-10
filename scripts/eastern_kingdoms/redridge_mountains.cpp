@@ -93,7 +93,7 @@ struct MANGOS_DLL_DECL npc_corporal_keeshan_escortAI : public npc_escortAI
         //Combat check
         if (!m_creature->SelectHostileTarget() || !m_creature->getVictim())
             return;
-        
+
         if (m_uiMockingBlowTimer < uiDiff)
         {
             DoCastSpellIfCan(m_creature->getVictim(), SPELL_MOCKING_BLOW);
@@ -140,6 +140,6 @@ void AddSC_redridge_mountains()
     NewScript = new Script;
     NewScript->Name = "npc_corporal_keeshan";
     NewScript->GetAI = &GetAI_npc_corporal_keeshan;
-    NewScript->pQuestAccept = &QuestAccept_npc_corporal_keeshan;
+    NewScript->pQuestAcceptNPC = &QuestAccept_npc_corporal_keeshan;
     NewScript->RegisterSelf();
 }
