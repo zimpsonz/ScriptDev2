@@ -1,4 +1,4 @@
-/* Copyright (C) 2006 - 2011 ScriptDev2 <https://scriptdev2.svn.sourceforge.net/>
+/* Copyright (C) 2006 - 2011 ScriptDev2 <http://www.scriptdev2.com/>
 * This program is free software licensed under GPL version 2
 * Please see the included DOCS/LICENSE.TXT for more information */
 
@@ -11,6 +11,16 @@ extern void AddSC_battlegroundSA();
 //custom
 extern void AddSC_npc_arena_honor();
 extern void AddSC_mob_teleguy();
+
+// OutdoorPvP
+extern void AddSC_outdoor_pvp_eastern_kingdoms();
+extern void AddSC_outdoor_pvp_kalimdor();
+extern void AddSC_outdoor_pvp_northrend();
+extern void AddSC_outdoor_pvp_outland();
+
+// OutdoorPvP zone scripts
+extern void AddSC_outdoor_pvp_eastern_plaguelands();
+extern void AddSC_outdoor_pvp_silithus();
 
 //examples
 extern void AddSC_example_creature();
@@ -429,7 +439,6 @@ extern void AddSC_boss_lich_king_icc();
 extern void AddSC_instance_forge_of_souls();
 extern void AddSC_boss_devourer_of_souls();
 extern void AddSC_boss_bronjahm();
-extern void AddSC_trash_forge_of_souls();
 extern void AddSC_forge_of_souls();
 
 extern void AddSC_instance_halls_of_reflection();
@@ -533,6 +542,17 @@ void AddScripts()
     //custom
     AddSC_npc_arena_honor();
     AddSC_mob_teleguy();
+
+    // OutdoorPvP zone scripts
+    // Must be _before_ map scripts call!
+    AddSC_outdoor_pvp_eastern_plaguelands();
+    AddSC_outdoor_pvp_silithus();
+
+    // OutdoorPvP
+    AddSC_outdoor_pvp_eastern_kingdoms();
+    AddSC_outdoor_pvp_kalimdor();
+    AddSC_outdoor_pvp_northrend();
+    AddSC_outdoor_pvp_outland();
 
     //examples
     AddSC_example_creature();
@@ -939,7 +959,6 @@ void AddScripts()
     AddSC_instance_forge_of_souls();
     AddSC_boss_devourer_of_souls();
     AddSC_boss_bronjahm();
-    AddSC_trash_forge_of_souls();
     AddSC_forge_of_souls();
 
     AddSC_instance_halls_of_reflection();

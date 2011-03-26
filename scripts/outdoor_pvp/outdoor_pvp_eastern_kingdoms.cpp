@@ -1,4 +1,4 @@
-/* Copyright (C) 2006 - 2011 ScriptDev2 <https://scriptdev2.svn.sourceforge.net/>
+/* Copyright (C) 2006 - 2011 /dev/rsa for ScriptDev2 <http://www.scriptdev2.com/>
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
@@ -16,10 +16,34 @@
 
 /* ScriptData
 SDName: outdoor_pvp_eastern_kingdoms
-SD%Complete:
-SDComment: placeholder
+SD%Complete: who know?
+SDComment: map script selector by /dev/rsa
 SDCategory: Outdoor PvP
 EndScriptData */
 
 #include "precompiled.h"
 #include "outdoor_pvp_eastern_kingdoms.h"
+
+struct MANGOS_DLL_DECL outdoor_pvp_eastern_kingdoms : public OutdoorPvP_ZoneSelector
+{
+    outdoor_pvp_eastern_kingdoms(Map* pMap) : OutdoorPvP_ZoneSelector(pMap)
+    {
+        LoadZoneScripts(pMap, ZoneScriptList);
+    };
+};
+
+
+InstanceData* GetInstanceData_outdoor_pvp_eastern_kingdoms(Map* pMap)
+{
+    return new outdoor_pvp_eastern_kingdoms(pMap);
+}
+
+void AddSC_outdoor_pvp_eastern_kingdoms()
+{
+    Script *newscript;
+    newscript = new Script;
+    newscript->Name = "outdoor_pvp_eastern_kingdoms";
+    newscript->GetInstanceData = &GetInstanceData_outdoor_pvp_eastern_kingdoms;
+    newscript->RegisterSelf();
+}
+
