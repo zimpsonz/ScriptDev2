@@ -62,9 +62,6 @@ UPDATE creature_template SET ScriptName='mob_dementeddruids' WHERE entry=15260;
 
 /* GO */
 UPDATE gameobject_template SET ScriptName='go_cat_figurine' WHERE entry=13873;
-UPDATE gameobject_template SET ScriptName='go_northern_crystal_pylon' WHERE entry=164955;
-UPDATE gameobject_template SET ScriptName='go_western_crystal_pylon' WHERE entry=164956;
-UPDATE gameobject_template SET ScriptName='go_eastern_crystal_pylon' WHERE entry=164957;
 UPDATE gameobject_template SET ScriptName='go_barov_journal' WHERE entry=180794;
 UPDATE gameobject_template SET ScriptName='go_ethereum_prison' WHERE entry BETWEEN 184418 AND 184431;
 UPDATE gameobject_template SET ScriptName='go_ethereum_stasis' WHERE entry BETWEEN 185465 AND 185467;
@@ -795,7 +792,6 @@ UPDATE creature_template SET ScriptName='npc_skorn_whitecloud' WHERE entry=3052;
 
 /* NAGRAND */
 UPDATE creature_template SET ScriptName='mob_lump' WHERE entry=18351;
-UPDATE creature_template SET ScriptName='mob_sunspring_villager' WHERE entry=18240;
 UPDATE creature_template SET ScriptName='npc_altruis_the_sufferer' WHERE entry=18417;
 UPDATE creature_template SET ScriptName='npc_greatmother_geyah' WHERE entry=18141;
 UPDATE creature_template SET ScriptName='npc_lantresor_of_the_blade' WHERE entry=18261;
