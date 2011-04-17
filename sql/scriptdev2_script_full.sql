@@ -688,7 +688,16 @@ INSERT INTO script_texts (entry,content_default,sound,type,language,emote,commen
 (-1000641,'I... I will hide it. I will hide it until I find it a home, far away from here...',0,0,0,0,'ancient vrykul SAY_VRYKUL_HIDE'),
 
 (-1000642,'It\'s a female.',0,5,0,0,'leopard icepaw SAY_ITS_FEMALE'),
-(-1000643,'It\'s an angry male!',0,5,0,0,'leopard icepaw SAY_ITS_MALE');
+(-1000643,'It\'s an angry male!',0,5,0,0,'leopard icepaw SAY_ITS_MALE'),
+
+(-1000644,'Ouch! That\'s it, I quit the target business!',0,0,0,0,'SAY_LUCKY_HIT_1'),
+(-1000645,'My ear! You grazed my ear!',0,0,0,0,'SAY_LUCKY_HIT_2'),
+(-1000646,'Not the \'stache! Now I\'m asymmetrical!',0,0,0,0,'SAY_LUCKY_HIT_3'),
+(-1000647,'Good shot!',0,0,0,0,'SAY_LUCKY_HIT_APPLE'),
+(-1000648,'Stop whining. You\'ve still got your luck.',0,0,0,0,'SAY_DROSTAN_GOT_LUCKY_1'),
+(-1000649,'Bah, it\'s an improvement.',0,0,0,0,'SAY_DROSTAN_GOT_LUCKY_2'),
+(-1000650,'Calm down lad, it\'s just a birdshot!',0,0,0,0,'SAY_DROSTAN_HIT_BIRD_1'),
+(-1000651,'The only thing hurt is your pride, lad! Buck up!',0,0,0,0,'SAY_DROSTAN_HIT_BIRD_2');
 
 -- -1 033 000 SHADOWFANG KEEP
 INSERT INTO script_texts (entry,content_default,sound,type,language,emote,comment) VALUES
@@ -1031,7 +1040,7 @@ INSERT INTO script_texts (entry,content_default,sound,type,language,emote,commen
 
 (-1469004,'In this world where time is your enemy, it is my greatest ally. This grand game of life that you think you play in fact plays you. To that I say...',0,0,0,0,'victor_nefarius SAY_GAMESBEGIN_1'),
 (-1469005,'Let the games begin!',8280,1,0,0,'victor_nefarius SAY_GAMESBEGIN_2'),
-(-1469006,'Ah, the heroes. You are persistent, aren\'t you. Your allied attempted to match his power against mine, and had to pay the price. Now he shall serve me, by slaughtering you. Get up little red wyrm and destroy them!',8279,1,0,0,'victor_nefarius SAY_VAEL_INTRO'),
+(-1469006,'Ah, the heroes. You are persistent, aren\'t you. Your allied attempted to match his power against mine, and had to pay the price. Now he shall serve me, by slaughtering you. Get up little red wyrm and destroy them!',8279,1,0,0,'victor_nefarius SAY_NEFARIUS_CORRUPT'),
 
 (-1469007,'Well done, my minions. The mortals\' courage begins to wane! Now, let\'s see how they contend with the true Lord of Blackrock Spire!',8288,1,0,0,'nefarian SAY_AGGRO'),
 (-1469008,'Enough! Now you vermin shall feel the force of my birthright, the fury of the earth itself.',8289,1,0,0,'nefarian SAY_XHEALTH'),
@@ -1060,7 +1069,7 @@ INSERT INTO script_texts (entry,content_default,sound,type,language,emote,commen
 (-1469029,'Nefarius\' hate has made me stronger than ever before. You should have fled, while you could, mortals! The fury of Blackrock courses through my veins!',8285,1,0,0,'vaelastrasz SAY_HALFLIFE'),
 (-1469030,'Forgive me $N, your death only adds to my failure.',8284,1,0,0,'vaelastrasz SAY_KILLTARGET'),
 
-(-1469031,'REUSE ME',0,0,0,0,'REUSE ME');
+(-1469031,'Death Knights, get over here!',0,1,0,0,'nefarian SAY_DEATH_KNIGHT');
 
 -- -1 509 000 RUINS OF AHN'QIRAJ
 INSERT INTO script_texts (entry,content_default,sound,type,language,emote,comment) VALUES
@@ -1346,8 +1355,8 @@ INSERT INTO script_texts (entry,content_default,sound,type,language,emote,commen
 (-1533080,'Breathe no more!',8850,1,0,0,'noth SAY_SLAY2'),
 (-1533081,'I will serve the master... in... death!',8848,1,0,0,'noth SAY_DEATH'),
 
-(-1533082,'%s takes in a deep breath...',0,2,0,0,'sapphiron EMOTE_BREATH'),
-(-1533083,'%s resumes his attacks!',0,2,0,0,'sapphiron EMOTE_GROUND'),
+(-1533082,'%s takes in a deep breath...',0,3,0,0,'sapphiron EMOTE_BREATH'),
+(-1533083,'%s resumes his attacks!',0,3,0,0,'sapphiron EMOTE_GROUND'),
 
 (-1533084,'Our preparations continue as planned, master.',14467,1,0,0,'kelthuzad SAY_SAPP_DIALOG1'),
 (-1533085,'It is good that you serve me so faithfully. Soon, all will serve the Lich King and in the end, you shall be rewarded...so long as you do not falter.',8881,1,0,0,'kelthuzad SAY_SAPP_DIALOG2_LICH'),
@@ -3458,6 +3467,12 @@ INSERT INTO gossip_texts (entry,content_default,comment) VALUES
 (-3409000,'Tell me more.','majordomo_executus GOSSIP_ITEM_SUMMON_1'),
 (-3409001,'What else do you have to say?','majordomo_executus GOSSIP_ITEM_SUMMON_2'),
 (-3409002,'You challenged us and we have come. Where is this master you speak of?','majordomo_executus GOSSIP_ITEM_SUMMON_3');
+
+-- -3 469 000 BLACKWING LAIR
+INSERT INTO gossip_texts (entry,content_default,comment) VALUES
+(-3469000,'I\'ve made no mistakes.','victor_nefarius GOSSIP_ITEM_NEFARIUS_1'),
+(-3469001,'You have lost your mind, Nefarius. You speak in riddles.','victor_nefarius GOSSIP_ITEM_NEFARIUS_2'),
+(-3469002,'Please do.','victor_nefarius GOSSIP_ITEM_NEFARIUS_3');
 
 -- -3 560 000 ESCAPE FROM DURNHOLDE (OLD HILLSBRAD)
 INSERT INTO gossip_texts (entry,content_default,comment) VALUES
